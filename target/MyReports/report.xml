@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="159.758">
+<testcase classname="Admin feature" name="Add Location" time="28.78">
+<system-out><![CDATA[Given User is at the login page.............................................passed
+When User enters correct Username and Password..............................passed
+And User clicks on the login Button.........................................passed
+Then User should be able to login...........................................passed
+Given User is on the Dashboard Page.........................................passed
+When User clicks on Admin panel.............................................passed
+And User clicks on Oraganization section....................................passed
+And User click on Locations link............................................passed
+Then Locations page should be dispalyed.....................................passed
+And User clicks on Add Location Icon........................................passed
+Then Add location form should be displayed..................................passed
+And User enters the location details........................................passed
+And click on Save button....................................................passed
+Then Sucessfully saved message should be displayed..........................passed
+And Location added should be in the Locations list..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Dashboard Page" name="Dashborad is displayed" time="18.221">
+<system-out><![CDATA[Given User is at the login page.............................................passed
+When User enters correct Username and Password..............................passed
+And User clicks on the login Button.........................................passed
+Then User should be able to login...........................................passed
+Given User is on the Dashboard Page.........................................passed
+When User verifies the page title...........................................passed
+Then page title should be "OrangeHRM".......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Dashboard Page" name="Admin Panel" time="14.984">
+<system-out><![CDATA[Given User is at the login page.............................................passed
+When User enters correct Username and Password..............................passed
+And User clicks on the login Button.........................................passed
+Then User should be able to login...........................................passed
+Given User is on the Dashboard Page.........................................passed
+When User clicks on the Admin panel.........................................passed
+Then User Mangement Panel is displayed......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Dashboard Page" name="Logout" time="16.242">
+<system-out><![CDATA[Given User is at the login page.............................................passed
+When User enters correct Username and Password..............................passed
+And User clicks on the login Button.........................................passed
+Then User should be able to login...........................................passed
+Given User is on the Dashboard Page.........................................passed
+When User clicks on the Admin Account.......................................passed
+And User clicks on Logout...................................................passed
+Then User should be logged out..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Feature" name="Login Page Title" time="10.969">
+<system-out><![CDATA[Given User is at the login page.............................................passed
+When User verifies the page title...........................................passed
+Then page title should be "OrangeHRM".......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Feature" name="Validation message for empty Username field" time="21.343">
+<system-out><![CDATA[Given User is at the login page.............................................passed
+When User leaves login field blank..........................................passed
+And User enters correct Password............................................passed
+And User clicks on the login Button.........................................passed
+Then Validation messgae should be displayed.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Feature" name="Validation message for empty Password field" time="19.426">
+<system-out><![CDATA[Given User is at the login page.............................................passed
+When User leaves login field blank..........................................passed
+And User enters correct Password............................................passed
+And User clicks on the login Button.........................................passed
+Then Validation messgae should be displayed.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Feature" name="Login Button present" time="9.069">
+<system-out><![CDATA[Given User is at the login page.............................................passed
+Then Login Button should be displayed.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Feature" name="Login with correct credentials" time="13.377">
+<system-out><![CDATA[Given User is at the login page.............................................passed
+When User enters correct Username and Password..............................passed
+And User clicks on the login Button.........................................passed
+Then User should be able to login...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Feature" name="Login with incorrect credential" time="22.57">
+<system-out><![CDATA[Given User is at the login page.............................................passed
+When User enters incorrect Username or Password.............................passed
+And User clicks on the login Button.........................................passed
+Then User should be navigated to Retry Login Page...........................passed
+And Incorrect Credentials Pop should be displayed...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Feature" name="Login with correct credentials on Retry Login Page" time="27.136">
+<system-out><![CDATA[Given User is at the login page.............................................passed
+When User enters incorrect Username or Password.............................passed
+And User clicks on the login Button.........................................passed
+Then User is on the Retry Login Page........................................passed
+When User enters correct Username and Password..............................passed
+And User clicks on the login Button.........................................passed
+Then User should be able to login...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Feature" name="Login with incorrect credentials on Retry Login Page" time="35.544">
+<system-out><![CDATA[Given User is at the login page.............................................passed
+When User enters incorrect Username or Password.............................passed
+And User clicks on the login Button.........................................passed
+Then User is on the Retry Login Page........................................passed
+When User enters incorrect Username or Password.............................passed
+And User clicks on the login Button.........................................passed
+Then Incorrect Credentials Pop should be displayed..........................passed
+]]></system-out>
+</testcase>
+</testsuite>
